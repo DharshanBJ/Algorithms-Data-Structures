@@ -19,11 +19,11 @@ public class AddTwoNumbersLinkedList {
             if(!lst2.isEmpty()) sum+=lst2.pop();
 
             node.val=sum%10;
-            ListNode head=new ListNode(sum/10);
+            ListNode head=new ListNode(sum/10); // since we are adding to the left,the new node will always be the head
             head.next=node;
             node=head;
             sum/=10;
         }
-        return node.val==0? node.next:node;
+        return node.val==0? node.next:node; // to take into account the overflow
     }
 }
