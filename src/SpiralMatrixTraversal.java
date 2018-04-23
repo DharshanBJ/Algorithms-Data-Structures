@@ -48,7 +48,7 @@ public class SpiralMatrixTraversal {
         input[1]=new int[]{5,6,7,8};
         input[2]=new int[]{9,10,11,12};
 
-        List<Integer> result=new ArrayList<>();
+        List<Integer> result;
 
         result=spiralOrder(input);
         System.out.println(result);
